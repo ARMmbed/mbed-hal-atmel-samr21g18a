@@ -1,0 +1,57 @@
+{
+  "name": "mbed-hal-atmel-samr21g18a",
+  "version": "0.1.0",
+  "description": "mbed HAL implementations specific to Atmel SAMR21G18A MCUs",
+  "keywords": [
+    "mbed",
+    "hal",
+    "atmel",
+    "samcortexm0p",
+    "samr21g18a"    
+  ],
+  "licenses": [
+    {
+      "url": "https://spdx.org/licenses/Apache-2.0",
+      "type": "Apache-2.0"
+    }
+  ],
+  "extraIncludes": [
+    "source",
+    "source/config/TARGET_SAMR21",  
+    "source/drivers/adc",
+    "source/drivers/adc/TARGET_SAMR21",
+    "source/drivers/dac",
+    "source/drivers/dma",
+    "source/drivers/extint/",
+    "source/drivers/extint/TARGET_SAMR21",
+    "source/drivers/port",
+    "source/drivers/rtc",
+    "source/drivers/rtc/TARGET_SAMR21",
+    "source/drivers/sercom",
+    "source/drivers/sercom/i2c",
+    "source/drivers/sercom/i2c/i2c_sam0",
+    "source/drivers/sercom/usart",
+    "source/drivers/services/delay",
+    "source/drivers/services/delay/sam0",
+    "source/drivers/system",
+    "source/drivers/system/clock",
+    "source/drivers/system/clock/TARGET_SAMR21",
+    "source/drivers/system/interrupt",
+    "source/drivers/system/interrupt/TARGET_SAMR21",
+    "source/drivers/system/pinmux",
+    "source/drivers/system/power/TARGET_SAMR21",
+    "source/drivers/system/reset/TARGET_SAMR21",
+    "source/drivers/tc",
+    "source/drivers/tc/TARGET_SAMR21",
+    "source/drivers/tcc",
+    "source/TARGET_SAMR21G18A",
+    "source/TARGET_SAMR21G18A/SAMR21_XPLAINED_PRO"
+  ],
+  "dependencies": {
+    "mbed-hal": "*",
+    "mbed-hal-atmel-samcortexm0p": "*"
+  },
+  "targetDependencies": {
+
+  }
+}
