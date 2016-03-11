@@ -19,6 +19,15 @@
 
 #include "pinmap.h"
 #include "PeripheralNames.h"
+#include "pinmap_function.h"
+#define PinMap_I2C_SDA  	PinMap_SERCOM_PAD
+#define PinMap_I2C_SCL  	PinMap_SERCOM_PAD
+#define PinMap_UART_TX  	PinMap_SERCOM_PAD
+#define PinMap_UART_RX  	PinMap_SERCOM_PAD
+#define PinMap_SPI_SCLK 	PinMap_SERCOM_PAD
+#define PinMap_SPI_MOSI 	PinMap_SERCOM_PAD
+#define PinMap_SPI_MISO 	PinMap_SERCOM_PAD
+#define pinmap_merge(x,y) 	pinmap_merge_sercom((PinName)x,(PinName)y)
 
 /************ADC***************/
 extern const PinMap PinMap_ADC[];
